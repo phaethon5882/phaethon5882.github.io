@@ -2,16 +2,9 @@ const body = document.querySelector("body")
 
 const IMG_NUMBER = 3
 
-function handleImgLoad() {
-  console.log("로딩끝!")
-}
-
 function paintImage(imgNumber) {
-  const image = new Image()
-  image.src = `./img/${imgNumber}.jpg`
-  image.addEventListener("loadend", handleImgLoad)
-  image.classList.add("bgImage")
-  body.appendChild(image)
+  const imgURL = `./img/${imgNumber}.jpg`
+  body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imgURL})`
 }
 
 function genRandom() {
