@@ -1,0 +1,15 @@
+.list {
+  margin-bottom: 20px;
+}
+
+.js-toDoList {
+  font-size: 1vw;
+}
+
+.btn {
+  padding: 0;
+  margin: 0 10px 0 0;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
